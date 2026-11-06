@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ee" />
+    <title>Log in | Oak & Ember</title>
+    <meta name="description" content="Log in to your Oak & Ember account." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/auth-form.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="site-header"></header>
+    <main id="main" class="container auth-wrap">
+      <div class="auth-card">
+        <div><p class="eyebrow">Welcome back</p><h1>Log in</h1></div>
+        <form class="panel form-stack" id="auth-form" data-mode="login">
+          <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="current-password" required /></div>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button type="submit" class="btn btn-block">Log in</button>
+        </form>
+        <p class="auth-alt">New here? <a href="/register" data-carry-next>Create an account</a></p>
+      </div>
+    </main>
+  </body>
+</html>

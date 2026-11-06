@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f3ee" />
+    <title>Oak & Ember | Goods for slow living</title>
+    <meta name="description" content="Handmade ceramics, linen, lighting and kitchen goods for a slower, warmer home." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="module" src="/js/home.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="site-header"></header>
+    <main id="main" class="container">
+      <section class="hero">
+        <p class="eyebrow">New season collection</p>
+        <h1>Goods for slow living.</h1>
+        <p>Handmade ceramics, washed linen and warm lighting, made in small batches by independent makers.</p>
+      </section>
+      <div class="toolbar">
+        <ul class="chips" id="category-chips" aria-label="Filter by category"></ul>
+        <form class="search" id="search-form" role="search">
+          <label for="search" class="sr-only">Search products</label>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input class="input" id="search" type="search" placeholder="Search products" autocomplete="off" />
+        </form>
+      </div>
+      <p class="sr-only" id="result-count" aria-live="polite"></p>
+      <ul class="product-grid" id="product-grid" aria-label="Products"></ul>
+    </main>
+  </body>
+</html>
